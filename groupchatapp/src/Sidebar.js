@@ -1,22 +1,21 @@
-/ / Sidebar.js / /
+/* Sidebar.js */
 
 
 import React from"react";
 import "./App.css";
-import chat from "./chat";
-import sidebar from "./sidebar";
-import Donutlarge from "@material-ui/icons/DonutLarge";
-import { Avatar , iconButton }  from "@material-ui/icons/core";
+import SidebarChats from "./SidebarChat";
+import DonutLarge from "@material-ui/icons/DonutLarge";
+import { Avatar , IconButton }  from "@material-ui/core";
 import ChatIcon from "@material-ui/icons/Chat";
-import MoreVertIcon from "@material-ui/icons/MoreVertIcon";
-
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { SearchOutlined }  from "@material-ui/icons";
 
 function Sidebar(){
 return(
 <div className = "sidebar">
-<h1>I am a sydebar<h1>
+<h1>I am a sydebar</h1>
 <div className = "sidebar_header">
-<Avatar src="/>
+<Avatar src="/"/>
 <div className = "sidebar_headerRight">
 <IconButton>
 <DonutLarge/>
@@ -29,6 +28,7 @@ return(
 </IconButton>
 </div>
 </div>
+
 
 <div className = "sidebar_Search">
 <div className = "sidebar_Searchcontainer">

@@ -1,15 +1,15 @@
-/ / SideChat.js / /
+// SideChat.js //
 
 
-import { Avatar }  from "@material-ui/icons/core";
+import { Avatar }  from "@material-ui/core";
 import React from"react";
-import "./SideChat.css";
+import "./SidebarChat.css";
 
-function SideChat(){
+function SidebarChats(){
 return(
-<div className = "SideChat">
+<div className = "SidebarChat">
 <Avatar />
-<div className ="SideChat_info">
+<div className ="SidebarChat_info">
 <h2>Room name</h2>
 <p>This is the last message</p>
 </div>
@@ -19,4 +19,4 @@ return(
 }
 
 
-export default SidebarChat;
+export default SidebarChats;
