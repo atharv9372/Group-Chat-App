@@ -28,9 +28,9 @@ font-weight: 500;
 color: gray;
 }
 
-.Chat-body{
+.Chat_body{
 flex: 1;
-background-image: url;
+background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
 background-repeat: repeat;
 background-position: center;
 padding: 30px;
@@ -61,7 +61,7 @@ font-size: xx-small;
 position: absolute;
 top: -15px;
 font-weight: 800;
-font-size: xx-samll;
+font-size: xx-small;
 }
 
 .Chat_footer{
@@ -74,7 +74,7 @@ border-top: 1px solid LightGray;
 
 .Chat_footer > form{
 flex: 1;
-
+display: flex;
 }
 
 .Chat_footer > form > input{

@@ -28,14 +28,14 @@ function Chat({messages}){
 	
 return(
 <div className = "Chat">
-<div className = "Cha_header">
+<div className = "Chat_header">
 <Avatar />
-<div className = "Cha_headerInfo">
+<div className = "Chat_headerInfo">
 <h3>Room name</h3>
 <p> Last seen at...</p>
 </div>
 
-<div className = "Cha_headerRight">
+<div className = "Chat_headerRight">
 <IconButton>
 <SearchOutlined/>
 </IconButton>
@@ -48,29 +48,59 @@ return(
 </div>
 </div>
 
-{/* <div className = "Chat_body">
-{messages.map((message) => (	
+<div className = "Chat_body">
+{/* {messages.map((message) => (	
 <p ClassName={'chat_message ${message.received && "chat_reciever"}'}>
 <span ClassName="chat_name">{message.name}</span>
 {message.message}
 <span ClassName="chat_timestamp">{message.timestamp}</span>
 </p>
-))};
+))}; */}
 
-<p ClassName="chat_message chat_reciever">
-<span ClassName="chat_name">Aditya</span>
+<p className="Chat_message Chat_reciever">
+<span className="Chat_name">Divesh</span>
 This ia a message
-<span ClassName="chat_timestamp">{newDate().toUTCstring()}</span>
+<span className="Chat_timestamp">{new Date().toGMTString()}</span>
 </p>
 
-</div> */}
+<p className="Chat_message">
+<span className="Chat_name">Aditya</span>
+This ia a message
+<span className="Chat_timestamp">{new Date().toGMTString()}</span>
+</p>
 
-<div className = "Cha_footer">
+<p className="Chat_message Chat_reciever">
+<span className="Chat_name">Divesh</span>
+This ia a message
+<span className="Chat_timestamp">{new Date().toGMTString()}</span>
+</p>
+
+<p className="Chat_message">
+<span className="Chat_name">Dipesh</span>
+This ia a message
+<span className="Chat_timestamp">{new Date().toGMTString()}</span>
+</p>
+
+<p className="Chat_message Chat_reciever">
+<span className="Chat_name">Divesh</span>
+This ia a message
+<span className="Chat_timestamp">{new Date().toGMTString()}</span>
+</p>
+
+<p className="Chat_message">
+<span className="Chat_name">Atharv</span>
+This ia a message
+<span className="Chat_timestamp">{new Date().toGMTString()}</span>
+</p>
+
+</div>
+
+<div className = "Chat_footer">
 <InsertEmoticonIcon />
-{/* <form>
-<input value={input} onChange={e => setInput (e.target.value) } placeholder="Type a message type="type="text" />
-<button onClick={sendMessage} type="submit">Send a message</button>
-</form>  */}
+<form>
+<input /*value={input} onChange={e => setInput (e.target.value) }*/ placeholder="Type a message"type="text" />
+<button /*onClick={sendMessage} */type="submit">Send a message</button>
+</form> 
 <MicIcon />
 </div>
 </div>
