@@ -9,16 +9,18 @@ import  InsertEmoticonIcon  from "@material-ui/icons/InsertEmoticon";
 import "./Chat.css";
 import  MicIcon from "@material-ui/icons/Mic";
 import axios from "./axios";
+import { useStateValue } from './StateProvider';
 
 function Chat({messages}){
 	const [input, setInput] = useState("");
+	const [{user}, dispatch] = useStateValue();
 	
 const sendMessage = async (e) => {
 	e.preventDefault();
 	
 	await axios.post("/messages/new", {
 	message: input,
-    name: "DEMO APP",
+    name: user.email,
     timestamp: "Just now!",
     received: false,
 });
@@ -58,7 +60,7 @@ return(
 </p>
 ))}
 
-<p className="Chat_message Chat_reciever">
+{/* <p className="Chat_message Chat_reciever">
 <span className="Chat_name">Divesh</span>
 This ia a message
 <span className="Chat_timestamp">{new Date().toGMTString()}</span>
@@ -92,7 +94,7 @@ This ia a message
 <span className="Chat_name">Atharv</span>
 This ia a message
 <span className="Chat_timestamp">{new Date().toGMTString()}</span>
-</p>
+</p> */}
 
 </div>
 
