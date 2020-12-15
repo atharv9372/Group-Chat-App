@@ -21,8 +21,7 @@ const sendMessage = async (e) => {
 	await axios.post("/messages/new", {
 	message: input,
     name: user.email,
-    timestamp: "Just now!",
-    received: false,
+    timestamp: new Date().toGMTString(),
 });
 
 setInput("");

@@ -25,11 +25,11 @@ function Login() {
         <div className = "login">
             <div className = "login__container">
                 <img 
-                    src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png"
+                    src = "https://media-exp1.licdn.com/dms/image/C4D0BAQGV22ZUiMZUXQ/company-logo_200_200/0?e=2159024400&v=beta&t=J41QMPpMEhet0IdbMAKuQ1MRCupUCjTOZP7Ve11x7Hk"
                     alt = ""
                 />
                 <div className = "login__text">
-                    <h1>Sign in to WhatsApp</h1>
+                    <h1>Group Chat Sign in..</h1>
                 </div>
 
                 <Button type = "submit" onClick={signIn}>
